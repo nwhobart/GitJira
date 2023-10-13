@@ -38,6 +38,11 @@ jobs:
         run: |
           poetry install
 
+      - name: Test Python version
+        run: |
+          python3 --version
+          python --version
+
       - name: Python Semantic Release
         uses: python-semantic-release/python-semantic-release@master
         with:
