@@ -4,12 +4,26 @@ import os
 import sys
 import re
 import logging
+import subprocess
 from git import Repo
 from jira import JIRA
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
 
+def change_to_git_root():
+    try:
+        # Get the root directory of the git repository
+        git_root = subprocess.check_output(['git', 'rev-parse', '--show-toplevel'], universal_newlines=True).strip()
+        # Change the current working directory to the git root directory
+        os.chdir(git_root)
+    except subprocess.CalledProcessError as e:
+        logging.error(f"Failed to find git repository root: {e}")
+        exit(1)
+
+def sanitize_branch_name(name):
+    # Replace spaces with underscores and remove any characters that are not alphanumeric, hyphens, or underscores
+    return re.sub(r'[^a-zA-Z0-9-_]', '', name.replace(' ', '_'))
 
 def get_branch_name_based_on_jira_ticket(
     jira_server, jira_email, jira_api_token, ticket_id
@@ -31,14 +45,14 @@ def get_branch_name_based_on_jira_ticket(
         else "issue"
     )
 
-    branch_name = f"{branch_prefix}/{ticket_id}-{ticket.fields.summary.replace(' ', '_').replace('/', '').replace(':', '').replace('?', '').lower()}"
+    sanitized_summary = sanitize_branch_name(ticket.fields.summary)
+    branch_name = f"{branch_prefix}/{ticket_id}-{sanitized_summary.lower()}"
 
     # Ensure the branch name doesn't exceed 100 characters
     if len(branch_name) > 100:
         branch_name = branch_name[:100]
 
     return branch_name
-
 
 def create_git_branch_and_set_upstream(branch_name):
     repo = Repo()
@@ -66,9 +80,10 @@ def create_git_branch_and_set_upstream(branch_name):
         f"Successfully pushed the new branch '{branch_name}' and set the upstream."
     )
 
-
 if __name__ == "__main__":
-    jira_server = os.environ.get("JIRA_SERVER", "https://clearcover.atlassian.net/")
+    change_to_git_root()  # Call this function at the start of your script or main function
+
+    jira_server = os.environ.get("JIRA_SERVER")
     jira_email = os.environ.get("JIRA_EMAIL")
     jira_api_token = os.environ.get("JIRA_API_TOKEN")
 
@@ -94,3 +109,4 @@ if __name__ == "__main__":
         jira_server, jira_email, jira_api_token, ticket_id
     )
     create_git_branch_and_set_upstream(branch_name)
+
