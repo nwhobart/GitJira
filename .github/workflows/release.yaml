@@ -2,6 +2,7 @@ name: Semantic Release
 
 permissions:
   contents: write
+  id-token: write
 
 on:
   push:
@@ -41,7 +42,6 @@ jobs:
       - name: Test Python version
         run: |
           python3 --version
-          python --version
 
       - name: Python Semantic Release
         uses: python-semantic-release/python-semantic-release@master
