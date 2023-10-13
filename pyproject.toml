@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "gitjira"
+version = "0.1.0"
+description = "Create Git branches from Jira tickets"
+authors = ["Nick Hobart <nick@hobart.io>"]
+license = "GPL-3.0-or-later"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+GitPython = "^3.1.37"
+jira = "^3.5.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.semantic_release]
+version_variable = [
+    "__init__.py:__version__"
+]
+version_toml = [
+    "pyproject.toml:tool.poetry.version"
+]
+version_pattern = [
+    "README.md:rev: v{version}",
+]
+major_on_zero = false
+branch = "main"
+upload_to_repository = false
+upload_to_release = true
+build_command = "pip install poetry && poetry build"
