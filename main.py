@@ -11,19 +11,24 @@ from jira import JIRA
 # Set up logging
 logging.basicConfig(level=logging.INFO)
 
+
 def change_to_git_root():
     try:
         # Get the root directory of the git repository
-        git_root = subprocess.check_output(['git', 'rev-parse', '--show-toplevel'], universal_newlines=True).strip()
+        git_root = subprocess.check_output(
+            ["git", "rev-parse", "--show-toplevel"], universal_newlines=True
+        ).strip()
         # Change the current working directory to the git root directory
         os.chdir(git_root)
     except subprocess.CalledProcessError as e:
         logging.error(f"Failed to find git repository root: {e}")
         exit(1)
 
+
 def sanitize_branch_name(name):
     # Replace spaces with underscores and remove any characters that are not alphanumeric, hyphens, or underscores
-    return re.sub(r'[^a-zA-Z0-9-_]', '', name.replace(' ', '_'))
+    return re.sub(r"[^a-zA-Z0-9-_]", "", name.replace(" ", "_"))
+
 
 def get_branch_name_based_on_jira_ticket(
     jira_server, jira_email, jira_api_token, ticket_id
@@ -54,6 +59,7 @@ def get_branch_name_based_on_jira_ticket(
 
     return branch_name
 
+
 def create_git_branch_and_set_upstream(branch_name):
     repo = Repo()
 
@@ -79,6 +85,7 @@ def create_git_branch_and_set_upstream(branch_name):
     logging.info(
         f"Successfully pushed the new branch '{branch_name}' and set the upstream."
     )
+
 
 if __name__ == "__main__":
     change_to_git_root()  # Call this function at the start of your script or main function
@@ -109,4 +116,3 @@ if __name__ == "__main__":
         jira_server, jira_email, jira_api_token, ticket_id
     )
     create_git_branch_and_set_upstream(branch_name)
-
