@@ -1,4 +1,4 @@
-# GitJira
+# BFJira 
 Create branches from Jira tickets
 
 ## Requirements

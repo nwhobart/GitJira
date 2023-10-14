@@ -42,6 +42,6 @@ jobs:
           github_token: ${{ secrets.REPO_ADMIN_TOKEN }}
 
       - name: Publish to PyPi
-        uses: JRubics/poetry-publish@v1.17
+        uses: JRubics/poetry-publish@v1.16
         with:
           pypi_token: ${{ secrets.PYPI_TOKEN }}

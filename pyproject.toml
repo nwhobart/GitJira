@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "gitjira"
+name = "bfjira"
 version = "0.0.2"
 description = "Create Git branches from Jira tickets"
 authors = ["Nick Hobart <nick@hobart.io>"]
