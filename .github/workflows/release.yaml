@@ -40,6 +40,6 @@ jobs:
           poetry install
 
       - name: Python Semantic Release
-        uses: python-semantic-release/python-semantic-release@master
+        uses: relekang/python-semantic-release@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
