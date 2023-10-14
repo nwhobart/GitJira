@@ -2,6 +2,39 @@
 
 
 
+## v0.0.3 (2023-10-14)
+
+### Chore
+
+* chore: trying a new action ([`0dc9489`](https://github.com/nwhobart/GitJira/commit/0dc9489d260a087a312d6e0152683b0638be0dea))
+
+* chore: trying to push to pypi ([`8fb7093`](https://github.com/nwhobart/GitJira/commit/8fb7093a8f491aad9262211aa19715841103b52a))
+
+* chore: adding pypi token ([`6c8f01a`](https://github.com/nwhobart/GitJira/commit/6c8f01a35e141e07291c44747618949e7007bd19))
+
+### Fix
+
+* fix: change name / change pypi publish version ([`1020cbd`](https://github.com/nwhobart/GitJira/commit/1020cbd4b381188eebcaa443e0e7f960a7c252a0))
+
+### Unknown
+
+* Merge pull request #9 from nwhobart/change_the_name
+
+fix: change name / change pypi publish version ([`3a91cc3`](https://github.com/nwhobart/GitJira/commit/3a91cc32376c389823fbb39cbfaed47d54b0a294))
+
+* Merge pull request #8 from nwhobart/chore-pypi_take_3
+
+chore: trying a new action ([`3fa8a83`](https://github.com/nwhobart/GitJira/commit/3fa8a83369127d8612dfa346e288c27a48848898))
+
+* Merge pull request #7 from nwhobart/try_to_publish_to_pypi
+
+chore: trying to push to pypi ([`740d47c`](https://github.com/nwhobart/GitJira/commit/740d47c74fa40e3f06d0abe06f80907fd204fda7))
+
+* Merge pull request #6 from nwhobart/try_publishing_to_pypi
+
+chore: adding pypi token ([`3a5a293`](https://github.com/nwhobart/GitJira/commit/3a5a293cd396d6a7f3d724cbb4b8d3783c6b1bc9))
+
+
 ## v0.0.2 (2023-10-14)
 
 ### Fix
