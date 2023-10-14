@@ -2,6 +2,19 @@
 
 
 
+## v0.0.2 (2023-10-14)
+
+### Fix
+
+* fix: changing workflow to use admin PAT ([`2587576`](https://github.com/nwhobart/GitJira/commit/2587576fca5b6a405b11fbd48e76e4a24b1085d1))
+
+### Unknown
+
+* Merge pull request #5 from nwhobart/use_github_admin_creds
+
+fix: changing workflow to use admin PAT ([`c0507f2`](https://github.com/nwhobart/GitJira/commit/c0507f23ffc330a75ed76d623ecbac81aee69976))
+
+
 ## v0.0.1 (2023-10-14)
 
 ### Chore
