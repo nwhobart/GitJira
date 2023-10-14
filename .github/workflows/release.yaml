@@ -26,12 +26,6 @@ jobs:
         with:
           virtualenvs-create: false
 
-      - name: Cache poetry dependencies
-        uses: actions/cache@v3
-        with:
-          path: ~/.cache/pypoetry/virtualenvs
-          key: ${{ runner.os }}-poetry-${{ hashFiles('poetry.lock') }}
-
       - name: Run poetry
         run: |
           poetry install
@@ -41,7 +35,8 @@ jobs:
         with:
           github_token: ${{ secrets.REPO_ADMIN_TOKEN }}
 
-      - name: Publish to PyPi
-        uses: JRubics/poetry-publish@v1.16
+      - name: Publish package
+        uses: pypa/gh-action-pypi-publish@27b31702a0e7fc50959f5ad993c78deac1bdfc29
         with:
-          pypi_token: ${{ secrets.PYPI_TOKEN }}
+          user: __token__
+          password: ${{ secrets.PYPI_TOKEN }}
