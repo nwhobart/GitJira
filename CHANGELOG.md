@@ -2,6 +2,19 @@
 
 
 
+## v0.0.4 (2023-10-14)
+
+### Fix
+
+* fix: trying first party publisher ([`c3db62f`](https://github.com/nwhobart/GitJira/commit/c3db62f331960fbb73342b8fbd36b10e8b5a424d))
+
+### Unknown
+
+* Merge pull request #11 from nwhobart/use_first_party_publisher
+
+fix: trying first party publisher ([`c334a71`](https://github.com/nwhobart/GitJira/commit/c334a717802c99810c666d621a1c129d5967ebb6))
+
+
 ## v0.0.3 (2023-10-14)
 
 ### Chore
