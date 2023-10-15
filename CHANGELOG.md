@@ -2,6 +2,19 @@
 
 
 
+## v0.0.7 (2023-10-15)
+
+### Fix
+
+* fix: deps and name change ([`09d8457`](https://github.com/nwhobart/GitJira/commit/09d845766986941017649d1fef3edcb0cf5b35f6))
+
+* fix: hopefully fix ([`e04b4a9`](https://github.com/nwhobart/GitJira/commit/e04b4a9bbf281eefa605064cf81b9db383ee5790))
+
+### Unknown
+
+* trying new step ([`7816838`](https://github.com/nwhobart/GitJira/commit/7816838b6553c9ea5b5d3b36c9b00152d6e37a05))
+
+
 ## v0.0.6 (2023-10-15)
 
 ### Fix
