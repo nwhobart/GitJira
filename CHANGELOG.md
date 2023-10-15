@@ -2,6 +2,31 @@
 
 
 
+## v0.0.9 (2023-10-15)
+
+### Fix
+
+* fix: trying more logic ([`1530a34`](https://github.com/nwhobart/GitJira/commit/1530a34fe06c68a66270623cdd9482c3408c459b))
+
+* fix: trigger work flow ([`9ab28d7`](https://github.com/nwhobart/GitJira/commit/9ab28d73b44a31fc8cc7e5246267b0c623b4bcd9))
+
+* fix: adding back big file ([`86b5186`](https://github.com/nwhobart/GitJira/commit/86b5186cd052755a6deb0029544ecbefa5f2568f))
+
+* fix: trying something  new ([`d951bc0`](https://github.com/nwhobart/GitJira/commit/d951bc07ff3528816f935d54b9180b480eb73279))
+
+### Unknown
+
+* Merge pull request #15 from nwhobart/more-weird-logic
+
+fix: trying more logic ([`4df959d`](https://github.com/nwhobart/GitJira/commit/4df959d660b254326c4477ceb480999358510e96))
+
+* Merge pull request #14 from nwhobart/testing_branch
+
+fix: trigger work flow ([`0c1a616`](https://github.com/nwhobart/GitJira/commit/0c1a616894492492fb534370e0aa168616662f9b))
+
+* trying again ([`a01fcfb`](https://github.com/nwhobart/GitJira/commit/a01fcfb1a8009b0c58775109f84786f4b8796d58))
+
+
 ## v0.0.8 (2023-10-15)
 
 ### Fix
