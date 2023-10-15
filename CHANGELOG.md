@@ -2,6 +2,23 @@
 
 
 
+## v0.0.5 (2023-10-15)
+
+### Chore
+
+* chore: rip out publish for now ([`081ac78`](https://github.com/nwhobart/GitJira/commit/081ac78fcac70003faae12c270368eeb76b09a49))
+
+### Fix
+
+* fix: adding back release but in its own file ([`6c1f426`](https://github.com/nwhobart/GitJira/commit/6c1f4268b6034c9a08ce9f6186f59c35f771c507))
+
+### Unknown
+
+* Merge pull request #13 from nwhobart/publish_in_own_file
+
+fix: adding back release but in its own file ([`620ac76`](https://github.com/nwhobart/GitJira/commit/620ac767e662d42473589ae09d6a32c82224b69f))
+
+
 ## v0.0.4 (2023-10-14)
 
 ### Fix
