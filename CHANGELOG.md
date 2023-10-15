@@ -2,6 +2,13 @@
 
 
 
+## v0.0.6 (2023-10-15)
+
+### Fix
+
+* fix: what is going on ([`eab6a26`](https://github.com/nwhobart/GitJira/commit/eab6a26271db0af7cda7d5893872660641a4df02))
+
+
 ## v0.0.5 (2023-10-15)
 
 ### Chore
