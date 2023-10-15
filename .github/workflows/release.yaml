@@ -35,6 +35,7 @@ jobs:
           github_token: ${{ secrets.REPO_ADMIN_TOKEN }}
 
   publish:
+    needs: release
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
