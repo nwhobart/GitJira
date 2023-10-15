@@ -2,6 +2,17 @@
 
 
 
+## v0.0.8 (2023-10-15)
+
+### Fix
+
+* fix: bigger release file now ([`ca464f4`](https://github.com/nwhobart/GitJira/commit/ca464f499feff67852a9d3c747d653f4c97f7beb))
+
+* fix: trying to not run on releases ([`c17e746`](https://github.com/nwhobart/GitJira/commit/c17e746bcdf871b05d30317deb8f5263c61eaa68))
+
+* fix: major change ([`ed7c6e7`](https://github.com/nwhobart/GitJira/commit/ed7c6e798c471774c22b72dbecd81e73eee7e77d))
+
+
 ## v0.0.7 (2023-10-15)
 
 ### Fix
