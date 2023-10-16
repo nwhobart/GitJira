@@ -2,6 +2,19 @@
 
 
 
+## v0.0.13 (2023-10-16)
+
+### Fix
+
+* fix: remove macos ([`30b49aa`](https://github.com/nwhobart/GitJira/commit/30b49aa5d6a41adbace9c4490c306b3d664a1992))
+
+### Unknown
+
+* Merge pull request #19 from nwhobart/more_wheel_shit
+
+fix: remove macos ([`051ab90`](https://github.com/nwhobart/GitJira/commit/051ab90669a4f2f7c97620a050599043c023c4d3))
+
+
 ## v0.0.12 (2023-10-16)
 
 ### Fix
