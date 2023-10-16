@@ -1,49 +1,29 @@
 name: Build and upload to PyPI
 
 on:
+  workflow_dispatch:
   release:
     types:
       - published
 
 jobs:
-  build_wheels:
-    name: Build wheels on ${{ matrix.os }}
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ubuntu-22.04]
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Build wheels
-        uses: pypa/cibuildwheel@v2.16.2
-        env:
-          CIBW_BUILD: cp310-*
-
-      - uses: actions/upload-artifact@v3
-        with:
-          path: ./wheelhouse/*.whl
-
-  build_sdist:
-    name: Build source distribution
+  dist:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - name: Build sdist
-        run: pipx run build --sdist
-
-      - uses: actions/upload-artifact@v3
         with:
-          path: dist/*.tar.gz
+          fetch-depth: 0
 
-  upload_pypi:
-    needs: [build_wheels, build_sdist]
-    runs-on: ubuntu-latest
+      - uses: hynek/build-and-inspect-python-package@v1
+
+  publish:
+    needs: [dist]
     environment: pypi
     permissions:
       id-token: write
+    runs-on: ubuntu-latest
+    if: github.event_name == 'release' && github.event.action == 'published'
+
     steps:
       - uses: actions/download-artifact@v3
         with:
@@ -51,3 +31,4 @@ jobs:
           path: dist
 
       - uses: pypa/gh-action-pypi-publish@release/v1
+
