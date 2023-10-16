@@ -14,7 +14,12 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: hynek/build-and-inspect-python-package@v1
+      - name: Build SDist and wheel
+        run: pipx run build
+
+      - uses: actions/upload-artifact@v3
+        with:
+          path: dist/*
 
   publish:
     needs: [dist]
@@ -31,4 +36,3 @@ jobs:
           path: dist
 
       - uses: pypa/gh-action-pypi-publish@release/v1
-
