@@ -2,6 +2,19 @@
 
 
 
+## v0.0.14 (2023-10-16)
+
+### Fix
+
+* fix: i hope this works ([`544bbbd`](https://github.com/nwhobart/GitJira/commit/544bbbd297f450d2822664922a6d859f214bb930))
+
+### Unknown
+
+* Merge pull request #20 from nwhobart/trying_final_option
+
+fix: i hope this works ([`4bc69ae`](https://github.com/nwhobart/GitJira/commit/4bc69aec5ee77efd42768f1172f4d1ff3679520b))
+
+
 ## v0.0.13 (2023-10-16)
 
 ### Fix
