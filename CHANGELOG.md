@@ -2,6 +2,19 @@
 
 
 
+## v0.0.10 (2023-10-16)
+
+### Fix
+
+* fix: new dir strucure ([`bd23b62`](https://github.com/nwhobart/GitJira/commit/bd23b6254c1fb808a6534d4b5ea8fefa5a1e5a8a))
+
+### Unknown
+
+* Merge pull request #16 from nwhobart/trying-new-file-structure
+
+fix: new dir strucure ([`1276491`](https://github.com/nwhobart/GitJira/commit/12764915e3a8ab5c49f09b22dee6b956228a23a3))
+
+
 ## v0.0.9 (2023-10-15)
 
 ### Fix
