@@ -2,6 +2,19 @@
 
 
 
+## v0.0.12 (2023-10-16)
+
+### Fix
+
+* fix: chaning build ([`6f4450a`](https://github.com/nwhobart/GitJira/commit/6f4450ae5495db351f16ad7710f942ce0cea8168))
+
+### Unknown
+
+* Merge pull request #18 from nwhobart/changing_build
+
+fix: chaning build ([`fcc7665`](https://github.com/nwhobart/GitJira/commit/fcc7665aea4fa09e298a4d6bd7c50384a4e07e52))
+
+
 ## v0.0.11 (2023-10-16)
 
 ### Fix
