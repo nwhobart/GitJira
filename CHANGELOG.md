@@ -2,6 +2,19 @@
 
 
 
+## v0.0.11 (2023-10-16)
+
+### Fix
+
+* fix: adding pypi upload ([`70b9690`](https://github.com/nwhobart/GitJira/commit/70b96904adf03df000a7cb341a218b2e54bb454b))
+
+### Unknown
+
+* Merge pull request #17 from nwhobart/releasing_to_pypi
+
+fix: adding pypi upload ([`37a72e9`](https://github.com/nwhobart/GitJira/commit/37a72e976b9093c1db09e423f4a10baa1aeae556))
+
+
 ## v0.0.10 (2023-10-16)
 
 ### Fix
