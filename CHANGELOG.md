@@ -2,6 +2,19 @@
 
 
 
+## v0.0.15 (2023-10-16)
+
+### Fix
+
+* fix: removing twine ([`73dc38a`](https://github.com/nwhobart/GitJira/commit/73dc38a8e5d58dbadaaef910b84822fabcf92334))
+
+### Unknown
+
+* Merge pull request #21 from nwhobart/remove_twine_check
+
+fix: removing twine ([`e3004d6`](https://github.com/nwhobart/GitJira/commit/e3004d618b0a2c5102aba949a697c7a15af3dfc3))
+
+
 ## v0.0.14 (2023-10-16)
 
 ### Fix
